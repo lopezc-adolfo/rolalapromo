@@ -1,0 +1,82 @@
+/*
+Theme Name: Mi Tema Personalizado
+Theme URI: https://www.ejemplo.com/tema-personalizado
+Description: Este es un tema personalizado para WordPress.
+Author: Nombre del Autor
+Author URI: https://www.ejemplo.com/autor
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: mi-tema
+*/
+
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para la navegación */
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.nav-menu li:last-child {
+    margin-right: 0;
+}
+
+.nav-menu a {
+    color: #333;
+    padding: 5px 10px;
+}
+
+.nav-menu a:hover {
+    background-color: #0073e6;
+    color: #fff;
+}
+
+/* Estilos para el encabezado */
+
+.header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    margin: 0;
+    color: #333;
+}
+
+/* Estilos para el contenido */
+
+.content {
+    padding: 20px;
+}
+
+/* Estilos para el pie de página */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
