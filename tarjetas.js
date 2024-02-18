@@ -1,5 +1,5 @@
 
-const cargarPromociones = async () => {
+const mostrarPromociones = async () => {
     try {
         //const respuesta = await fetch('https://script.google.com/macros/s/AKfycbwCCHa7daLgcL3rzoJatqfPMuF5icF3T4ca-7QpkCKUE2EO27YQq113rCFKk2pGWWIIlQ/exec');
         const respuesta = await fetch('https://script.google.com/macros/s/AKfycbwecoY9VoIClz5dOpRqRPttc6dLdOhz7xUCte0zdSILlxkD1KThA-I_-Oba-SJ3Zae5xQ/exec');
@@ -42,4 +42,4 @@ function crearPromocionPlantilla(promocion, index) {
 }
 
 
-cargarPromociones();
+mostrarPromociones();
