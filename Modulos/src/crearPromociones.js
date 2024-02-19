@@ -1,4 +1,4 @@
-export default (promocion, index) => {
+const crearPromociones = (promocion, index) => {
     let plantilla = document.getElementById('plantillaPromocion');
     let copia = document.importNode(plantilla.content, true);
     let precio = promocion.Precio;
@@ -13,3 +13,5 @@ export default (promocion, index) => {
 
     return copia;
 }
+
+export default crearPromociones;
