@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Modulos/public/bundle.css">
+    <title>Rola La Promo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="icon" href="img/logo_rlp.png" sizes="192x192">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="icon-title-container">
+            <img src="./img/logo_rlp.png" alt="Rola La Promo" class="header__logo-imagen sidebar__logo">
+            <h1 class="header__titulo">Rola La Promo</h1>
+        </div>
+
+        <div class="menu_principal">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">Categoría &#9776;</label>
+
+            <nav class="items">
+                <button class="btn btn--active" id="supermercados">Supermercados</button>
+                <button class="btn" id="negociosLocales">Negocios locales</button>
+                <button class="btn" id="exclusivosOnline">Exclusivos online</button>
+                <button class="btn" id="canastaBasica">Canasta básica</button>
+                <button class="btn" id="cupones">Cupones</button>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <div class="contenedor">
+
+        <aside class="sidebar" id="sidebar">
+
+            <div class="sidebar__ubicaciones">
+                <div class="sidebar__contenedor-ubicaciones" id="filtro-ubicaciones">
+                </div>
+            </div>
+        </aside>
+
+
+        <main class="main">
+            <div class="main__populares" id="populares" data-pagina="1">
+                <h2 class="main__titulo">Las mejores promociones en Cancún</h2>
+            </div>
+
+            <div id="divPromociones" class="main__grid">
+            </div>
+        </main>
+
+    </div>
+    <footer></footer>
+    <script src="Modulos/public/bundle.js"></script>
+</body>
+
+</html>

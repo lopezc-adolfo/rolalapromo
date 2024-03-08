@@ -1,0 +1,487 @@
+/*
+
+Estándar de estilos;
+
+1. Posicionamiento
+2. Modelo de caja
+3. Tipografía
+4. Estilos visuales
+5. Otros
+
+*/
+
+/* ----- ESTILOS GENERALES ----- */
+
+:root {
+    --white: #fff,
+        --black: #1d1d1d
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html {
+    font-family: "Montserrat", sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    color: #1d1d1d;
+    background: #fff;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Estilos del header */
+
+.header {
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    /* Ajusta el relleno según sea necesario */
+}
+
+.icon-title-container {
+    display: flex;
+    align-items: center;
+}
+
+.menu_principal {
+    display: flex;
+    align-items: center;
+}
+
+.items {
+    display: flex;
+    gap: 10px;
+    /* Espaciado entre los botones */
+    /* Ajusta otros estilos según sea necesario */
+}
+
+/* Estilos para el logo y el título */
+.header__logo-imagen {
+    max-width: 4rem;
+    /* Establece el ancho máximo según sea necesario */
+    margin-right: 10px;
+    /* Espaciado entre el logo y el título, ajusta según sea necesario */
+}
+
+
+/* Ajusta los estilos del menú y los botones según sea necesario */
+.menu-icon {
+    margin-left: 10px;
+    /* Espaciado entre el título y el icono, ajusta según sea necesario */
+}
+
+.items {
+    display: flex;
+    /* Ajusta otros estilos según sea necesario */
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.contenedor {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    box-sizing: border-box;
+    flex: 1;
+}
+
+.main {
+    flex: 1;
+    width: 95%;
+    margin: 0px 20px 20px 20px;
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main__filtros {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.main__titulo {
+    margin: 10px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.main__grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 6rem;
+    gap: 6rem;
+    z-index: 0;
+}
+
+.main__media {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #2d2d33;
+}
+
+.main__media-titulo {
+    font-weight: 600;
+    text-align: center;
+}
+
+.main__media-fecha {
+    text-align: center;
+    font-size: 14px;
+}
+
+.main__media-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    vertical-align: top;
+    min-height: 170px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* ----- ESTILO DE LAS TARJETAS ----- */
+
+.tarjeta__promociones {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.tarjeta {
+    padding: 5px;
+    margin: 5px;
+}
+
+.caja-promocion img {
+    z-index: 2;
+    transition: all .5s;
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    display: grid;
+    justify-content: space-between;
+}
+
+.caja-promocion,
+.caja-promocion img {
+    position: relative;
+    border: .3rem solid var(--color-gris-oscuro);
+    border-radius: .3rem;
+    background-color: var(--color-gris-oscuro);
+}
+
+.caja-promocion:hover img {
+    transform: translateY(-8rem);
+}
+
+.datos-promocion {
+    position: absolute;
+    padding: .5rem;
+    background-color: black;
+    width: 250px;
+    height: 8rem;
+    bottom: 0;
+    border-radius: .3rem;
+}
+
+.datos-promocion p {
+    color: white;
+    font-size: 0.7rem;
+}
+
+.datos-promocion h3 {
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 0.25rem;
+}
+
+.datos-promocion h4 {
+    color: white;
+    font-size: 0.7rem;
+}
+
+.datos-promocion .descripcion {
+    color: white;
+    padding-bottom: 0.1rem;
+    font-size: 1rem;
+}
+
+.datos-promocion h3 .oferta {
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.datos-promocion h3 .precioEspecial {
+    font-weight: lighter;
+}
+
+.datos-promocion h3 .promocion {
+    color: red;
+    margin-left: 0.1rem;
+    margin-bottom: 0.1rem;
+    padding: 0.3rem;
+    background-color: yellow;
+    border-radius: 40%;
+    text-decoration: none;
+}
+
+.datos-promocion #ahorro {
+    color: red;
+    font-size: 1rem;
+}
+
+/* ----- ESTILOS DE LOS BOTONES ----- */
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    border: none;
+    background: #2d2d33;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.btn__icono {
+    width: 16px;
+    height: 16px;
+}
+
+.btn:hover {
+    background: #3b3b44;
+}
+
+.btn--active {
+    background-color: #c71717;
+}
+
+.btn--active:hover {
+    background-color: #c71717;
+}
+
+/* ----- ESTILOS DEL SIDEBAR ----- */
+
+.sidebar {
+    width: 250px;
+    /* Ancho fijo para el sidebar */
+    background: #fac234;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar__titulo {
+    color: #1d1d1d;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+.sidebar__ubicaciones {
+    margin-bottom: 40px;
+}
+
+.sidebar__contenedor-ubicaciones {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    padding-top: 2.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .header {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .items {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        float: right;
+        margin: 20px;
+        font-size: 20px;
+    }
+
+    #menu-toggle:checked~.items {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        right: 3rem;
+        top: 7rem;
+        gap: 5px;
+        z-index: 1;
+        background-color: #fac234;
+        padding: 1rem;
+        border-radius: 5%;
+    }
+
+    .main__titulo {
+        font-size: 1.85rem;
+        margin: 5px;
+    }
+
+    .items .btn {
+        color: #1d1d1d;
+        background-color: transparent;
+    }
+
+    .items .btn--active {
+        color: #fff;
+        background-color: #c71717;
+    }
+
+    .caja-promocion img {
+        z-index: 2;
+        transition: all .5s;
+        width: 12rem;
+        height: 15rem;
+        object-fit: cover;
+        display: grid;
+        justify-content: space-between;
+    }
+
+    .caja-promocion,
+    .caja-promocion img {
+        position: relative;
+        border: .3rem solid var(--color-gris-oscuro);
+        border-radius: .3rem;
+        background-color: var(--color-gris-oscuro);
+    }
+
+    .caja-promocion:hover img {
+        transform: translateY(0rem);
+    }
+
+    .datos-promocion {
+        position: relative;
+        padding: .5rem;
+        background-color: white;
+        width: 12rem;
+        height: 6rem;
+        bottom: 0;
+        border-radius: .3rem;
+    }
+
+    .datos-promocion p {
+        color: black;
+        font-size: 0.5rem;
+    }
+
+    .datos-promocion h3 {
+        color: black;
+        font-size: 0.9rem;
+    }
+
+    .datos-promocion h4 {
+        color: black;
+        font-size: 0.7rem;
+    }
+
+    .datos-promocion .descripcion {
+        color: black;
+        font-size: 0.7rem;
+    }
+
+    .datos-promocion h3 .oferta {
+        text-decoration: line-through;
+        font-weight: lighter;
+    }
+
+    .datos-promocion h3 .promocion {
+        color: red;
+        margin-left: 0.1rem;
+        margin-bottom: 0.1rem;
+        padding: 0.3rem;
+        background-color: yellow;
+        border-radius: 40%;
+        text-decoration: none;
+    }
+
+    .datos-promocion #ahorro {
+        color: red;
+        font-size: 0.75rem;
+    }
+    
+
+    .main__grid {
+        margin-top: 1rem;
+        gap: 1rem;
+        z-index: 0;
+    }
+
+    .sidebar {
+        flex: 2;
+    }
+
+    .main {
+        flex: 10;
+        margin: 5px;
+    }
+
+    .sidebar__contenedor-ubicaciones .btn {
+        border-radius: 1rem;
+        font-size: 1rem;
+    }
+
+    .tarjeta {
+        padding: 0;
+    }
+}
